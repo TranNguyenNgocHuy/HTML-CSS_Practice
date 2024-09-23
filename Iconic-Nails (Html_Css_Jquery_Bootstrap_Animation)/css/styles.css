@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oregano:ital@0;1&display=swap');
+:root {
+    --brand-light: #92cda5;
+    --brand-medium: #29aaa8;
+    --brand-semi-bold: #09729f;
+    --brand-bold: #085069;
+
+    --bg-primary: #e3f9e8;
+    --bg-footer: #92cda585;
+    --bg-light: rgb(248, 249, 250);
+
+    --icon-corlor: #29aaa896;
+
+    --overlay-orange: rgba(255, 123, 41, 0.2);
+
+    --gradient-brand: linear-gradient(to top, #92cda5, #29aaa8);
+    --gradient-brand-reverse: linear-gradient(to top, #29aaa8, #92cda5);
+
+    --gradient-overlay: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
+    --gradient-overlay-dark: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+
+    --white: #fff;
+
+    --shawdow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+/* Animation */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    color: var(--brand-semi-bold);
+    font-weight: 400;
+    background-color: var(--bg-light);
+}
+
+section {
+    padding: 2rem 0;
+    background-color: var(--bg-primary);
+}
+
+a {
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+ul {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+.bg-img-cover {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+.general-social-link {
+    display: flex;
+    gap: 0.25rem;
+}
+
+.general-social-link a {
+    height: 2.6rem;
+    width: 2.6rem;
+    background-color: #b4e0bf;
+    border-radius: 100px;
+    font-size: 1.4rem;
+    color: var(--white);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* *********** */
+/* BTN */
+/* *********** */
+.btn,
+.btn:active,
+.btn:first-child:active {
+    color: var(--white);
+    border: none;
+}
+
+.btn-md {
+    padding: 0.5rem 1.25rem;
+}
+
+.btn-lg {
+    padding: 0.75rem 1.75rem;
+}
+
+.btn-brand {
+    background: var(--gradient-brand);
+    color: var(--white);
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.btn-brand:hover,
+.btn-brand:active {
+    background: var(--gradient-brand-reverse);
+    color: var(--white);
+}
+
+.btn-reverse {
+    background: var(--gradient-brand-reverse);
+}
+
+.btn-reverse:hover,
+.btn-reverse:active {
+    background: var(--gradient-brand);
+    color: var(--white);
+}
+
+/* Custom Owl Carousel */
+.owl-nav .owl-prev,
+.owl-nav .owl-next {
+    background: var(--gradient-brand-reverse) !important;
+    color: var(--white) !important;
+    margin: 0 !important;
+    font-size: 2.225rem !important;
+    border-radius: 0 !important;
+
+    height: 2.25rem;
+    width: 2.5rem;
+    display: inline-flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.owl-nav .owl-prev:hover,
+.owl-nav .owl-next:hover {
+    background: var(--gradient-brand) !important;
+}
+
+.owl-nav .owl-prev {
+    border-top-left-radius: 100px !important;
+    border-bottom-left-radius: 100px !important;
+}
+
+.owl-nav .owl-next {
+    border-top-right-radius: 100px !important;
+    border-bottom-right-radius: 100px !important;
+}
+
+/* **************** */
+/* NavBar */
+/* **************** */
+.navbar {
+    background-color: var(--bg-primary);
+    box-shadow: var(--shawdow);
+    border-bottom: 1px solid var(--white);
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
+
+.navbar-toggler,
+.navbar-toggler:visited {
+    background: var(--gradient-brand);
+}
+
+.navbar-toggler:focus {
+    box-shadow: var(--shawdow);
+}
+
+.navbar-brand {
+    padding: 0.675rem 0rem;
+}
+
+.navbar-brand img {
+    max-width: 100%;
+}
+
+.nav-link,
+.nav-link:visited {
+    font-weight: 500;
+    color: var(--brand-semi-bold);
+    font-size: 1.1rem;
+    white-space: nowrap;
+    padding: 0.5rem 1.5rem;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: var(--brand-medium);
+}
+
+.nav-item .nav-link.active {
+    font-weight: 700;
+    color: var(--brand-medium);
+}
+
+.navbar-nav .nav-item {
+    margin: 0 0.25rem;
+}
+
+.hero-section.general {
+    background-image: var(--gradient-overlay-dark), url(https://iconiconellc.com/images/banner-01.jpg);
+    height: 38.5rem;
+}
+
+.hero-wrapper.general {
+    top: 45%;
+}
+
+.hero-content.general p {
+    font-size: 0.8rem;
+}
+
+.hero-content.general span a {
+    font-size: 0.8rem;
+    color: var(--brand-medium);
+    text-transform: capitalize;
+    letter-spacing: 0.4px;
+}
+
+.hero-content.general h1 {
+    font-size: 3rem;
+    margin-top: 0.5rem;
+}
+/* **************** */
+/* HERO SECTION */
+/* **************** */
+.hero-section {
+    background-image: var(--gradient-overlay), url(https://iconiconellc.com/images/banner-01.jpg);
+    height: 32.5rem;
+    color: var(--white);
+    position: relative;
+}
+
+.hero-wrapper {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-content span {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.12rem;
+}
+
+.hero-content h1 {
+    font-family: 'Oregano';
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content a {
+    font-size: 1.4rem;
+}
+
+/* **************** */
+/* INFO SECTION */
+/* **************** */
+.info-section {
+    background-color: var(--bg-primary);
+    padding: 1rem 0;
+}
+
+.info-box {
+    margin-top: -4rem;
+    padding: 1rem 1rem;
+    background: var(--gradient-brand);
+    border-radius: 50px;
+    border: 2px solid var(--white);
+    box-shadow: var(--shawdow);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+
+    position: relative;
+    z-index: 10;
+}
+
+.info-box span,
+.info-box span a {
+    height: 2.8rem;
+    width: 2.8rem;
+    background-color: var(--white);
+    border-radius: 100px;
+    font-size: 1.6rem;
+    color: var(--icon-corlor);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-box a {
+    color: var(--white);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.info-box a:hover {
+    color: var(--brand-semi-bold);
+}
+
+/* **************** */
+/* ABOUT US SECTION */
+/* **************** */
+.about-content {
+    padding: 0 2rem;
+}
+
+.about-content p {
+    color: var(--brand-bold);
+    font-weight: 500;
+    font-size: 1rem;
+
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.about-content img {
+    width: 100%;
+}
+
+/* **************** */
+/* SPECIALTIES SECTION */
+/* **************** */
+.specialties-title {
+    margin-bottom: 2rem;
+}
+
+.specialties-title h1 {
+    font-family: 'Oregano', sans-serif;
+    font-size: 3.2rem;
+}
+
+.specialties-title img {
+    width: 15%;
+    margin: 0 auto;
+}
+
+/* Product Slider */
+.product {
+    position: relative;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.product .general-social-link {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+
+    opacity: 0;
+}
+
+.product .general-social-link a:hover {
+    background-color: rgba(23, 137, 186, 0.9);
+}
+
+.overlay {
+    background: var(--overlay-orange);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+
+    opacity: 0;
+}
+
+.product:hover .overlay {
+    opacity: 1;
+}
+
+.product:hover .general-social-link {
+    top: 90%;
+    opacity: 1;
+}
+
+/* **************** */
+/* BOOKING SECTION */
+/* **************** */
+.booking-section {
+    background-image: var(--gradient-overlay-dark), url('https://iconiconellc.com/images/banner-02.jpg');
+}
+
+.booking-section h2 {
+    font-family: 'Oregano', sans-serif;
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 2.6rem;
+    letter-spacing: 2.5px;
+}
+
+.booking-section p {
+    max-width: 60%;
+    color: var(--white);
+    margin: 2rem auto 3rem auto;
+}
+
+/* **************** */
+/* Footer SECTION */
+/* **************** */
+footer {
+    background-color: var(--bg-footer);
+    padding: 2.5rem 0 2rem 0;
+}
+
+.footer-brand {
+    border-bottom: 1px solid var(--brand-semi-bold);
+    margin-bottom: 1rem;
+}
+
+.footer-brand a img {
+    width: 100%;
+    padding: 0.5rem 0 2.25rem 0;
+}
+
+.footer-top {
+    margin-bottom: 2rem;
+}
+
+.footer-top h5 {
+    font-family: 'Oregano';
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+}
+
+.footer-top .general-social-link a {
+    background-color: var(--brand-semi-bold);
+}
+
+.footer-top .general-social-link a:hover {
+    background-color: var(--brand-medium);
+}
+
+.footer-top ul {
+    padding: 0;
+}
+
+.footer-top ul li {
+    margin-bottom: 0.75rem;
+}
+
+.footer-bottom span a,
+.footer-top ul li a {
+    color: var(--brand-medium);
+    font-size: 1rem;
+}
+
+.footer-bottom span a:hover,
+.footer-top ul li a:hover {
+    color: var(--brand-semi-bold);
+}
+
+.footer-bottom {
+    border-top: 1px solid var(--brand-semi-bold);
+    padding-top: 1rem;
+}
+
+/* ////////////////////////////////////// */
+/* ABOUT US PAGE */
+
+/* **************** */
+/* Welcome section */
+/* **************** */
+.welcome-content h1 {
+    font-family: 'Oregano', sans-serif;
+    font-size: 3.125rem;
+    margin-top: 0.25rem;
+}
+
+.welcome-content p {
+    font-size: 1.075rem;
+    color: var(--brand-bold);
+    font-weight: 500;
+    margin-top: 1.75rem;
+}
+
+/* ////////////////////////////////////// */
+/* Service PAGE */
+
+/* **************** */
+/* Service section */
+/* **************** */
+.service-box img {
+    width: 100%;
+}
+
+.service-title {
+    border-bottom: 0.1px solid var(--brand-light);
+    padding: 0.25rem 0 0.5rem 0;
+    margin-bottom: 1.75rem;
+    width: auto;
+}
+
+.service-box h2 {
+    font-family: 'Oregano', sans-serif;
+    letter-spacing: 4px;
+    font-size: 1.9rem;
+}
+
+.service-box h6 {
+    color: var(--brand-medium);
+    font-weight: 400;
+}
+
+.service-box span {
+    color: var(--brand-semi-bold);
+    font-weight: 600;
+}
+
+.price {
+    min-width: 12%;
+}
+
+.service-box p {
+    color: var(--brand-light);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: 0.25rem 0 1.5rem 0;
+    width: 100%;
+}
+
+.service-title h6 {
+    color: var(--brand-light);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* ////////////////////////////////////// */
+/* Contact PAGE */
+
+/* **************** */
+/* map section */
+/* **************** */
+.map-section {
+    width: 100%;
+    height: 60vh;
+    margin: 0.125rem 0;
+}
+
+.map-section iframe {
+    width: 100%;
+    height: 100%;
+}

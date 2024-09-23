@@ -1,0 +1,53 @@
+/* 1200px */
+@media (max-width: 75em) {
+    .info-box a {
+        font-size: 1rem;
+    }
+}
+
+/* 990px */
+@media (max-width: 61.9375em) {
+    .info-section {
+        background-color: transparent;
+    }
+    .info-box {
+        margin-top: 0;
+        padding: 1.25rem 3rem;
+        justify-content: start;
+    }
+
+    .social-link {
+        justify-content: space-between;
+    }
+
+    .info-box a {
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 33.75em) {
+    .navbar-brand {
+        width: 85%;
+        margin-right: 0;
+    }
+
+    .info-box {
+        padding: 1.25rem 1rem;
+        justify-content: start;
+    }
+
+    .social-link {
+        justify-content: space-between;
+    }
+
+    .info-box span,
+    .info-box span a {
+        height: 2.4rem;
+        width: 2.4rem;
+        font-size: 1.4rem;
+    }
+
+    .info-box a {
+        font-size: 0.9rem;
+    }
+}
